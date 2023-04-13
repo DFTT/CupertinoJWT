@@ -1,0 +1,16 @@
+PODS:
+  - CupertinoJWT (0.2.1)
+
+DEPENDENCIES:
+  - CupertinoJWT (from `../`)
+
+EXTERNAL SOURCES:
+  CupertinoJWT:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CupertinoJWT: 9e563e914aaa390b61d49963df5b4e9f8e0c71dd
+
+PODFILE CHECKSUM: a1dcb3a9d1b7a3169527653479550c63a932205e
+
+COCOAPODS: 1.11.3

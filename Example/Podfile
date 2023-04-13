@@ -3,11 +3,14 @@ use_frameworks!
 target 'CupertinoJWTExample' do
 	platform :ios, '10.0'
 
-    pod 'CupertinoJWT'
+    # pod 'CupertinoJWT'
+   pod 'CupertinoJWT', :path => '../'
+   
 end
 
 target 'CupertinoJWTExampleWatchOS Extension' do
 	platform :watchos, '3.0'
 	
-    pod 'CupertinoJWT'
+#     pod 'CupertinoJWT'
+     pod 'CupertinoJWT', :path => '../'
 end

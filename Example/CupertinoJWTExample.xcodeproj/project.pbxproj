@@ -21,6 +21,8 @@
 		6C9126F421C747DE00C1C543 /* CupertinoJWTExampleWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6C9126DA21C747DC00C1C543 /* CupertinoJWTExampleWatchOS.app */; };
 		6C91270221C749EB00C1C543 /* CupertinoJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C91270121C749EB00C1C543 /* CupertinoJWT.framework */; };
 		6C91270421C749F500C1C543 /* CupertinoJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C91270321C749F500C1C543 /* CupertinoJWT.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A578165469568F86C1DE1050 /* Pods_CupertinoJWTExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47058C3E2CC7FFFB990E4117 /* Pods_CupertinoJWTExample.framework */; };
+		F17E0E43A772C06B38CDC921 /* Pods_CupertinoJWTExampleWatchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860407B18DECEC4C00418744 /* Pods_CupertinoJWTExampleWatchOS_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0EE1A55E71EA4435CE688308 /* Pods-CupertinoJWTExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CupertinoJWTExample.release.xcconfig"; path = "Target Support Files/Pods-CupertinoJWTExample/Pods-CupertinoJWTExample.release.xcconfig"; sourceTree = "<group>"; };
+		3777EDE6DA89394BC1DF59E9 /* Pods-CupertinoJWTExampleWatchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CupertinoJWTExampleWatchOS Extension.release.xcconfig"; path = "Target Support Files/Pods-CupertinoJWTExampleWatchOS Extension/Pods-CupertinoJWTExampleWatchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+		47058C3E2CC7FFFB990E4117 /* Pods_CupertinoJWTExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CupertinoJWTExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		556806BC8297C3CF05A4FE0B /* Pods-CupertinoJWTExampleWatchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CupertinoJWTExampleWatchOS Extension.debug.xcconfig"; path = "Target Support Files/Pods-CupertinoJWTExampleWatchOS Extension/Pods-CupertinoJWTExampleWatchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6C9126C321C745CD00C1C543 /* CupertinoJWTExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupertinoJWTExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9126C621C745CD00C1C543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9126C821C745CD00C1C543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		6C9126F121C747DE00C1C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C91270121C749EB00C1C543 /* CupertinoJWT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CupertinoJWT.framework; path = Carthage/Build/iOS/CupertinoJWT.framework; sourceTree = "<group>"; };
 		6C91270321C749F500C1C543 /* CupertinoJWT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CupertinoJWT.framework; path = Carthage/Build/watchOS/CupertinoJWT.framework; sourceTree = "<group>"; };
+		860407B18DECEC4C00418744 /* Pods_CupertinoJWTExampleWatchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CupertinoJWTExampleWatchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55DC89F5EC4B481266E78B6 /* Pods-CupertinoJWTExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CupertinoJWTExample.debug.xcconfig"; path = "Target Support Files/Pods-CupertinoJWTExample/Pods-CupertinoJWTExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C91270221C749EB00C1C543 /* CupertinoJWT.framework in Frameworks */,
+				A578165469568F86C1DE1050 /* Pods_CupertinoJWTExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C91270421C749F500C1C543 /* CupertinoJWT.framework in Frameworks */,
+				F17E0E43A772C06B38CDC921 /* Pods_CupertinoJWTExampleWatchOS_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +131,7 @@
 				6C9126EA21C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension */,
 				6C9126C421C745CD00C1C543 /* Products */,
 				6C91270021C749EB00C1C543 /* Frameworks */,
+				BE4FD116C21F7DB8035D1F49 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,8 +184,22 @@
 			children = (
 				6C91270321C749F500C1C543 /* CupertinoJWT.framework */,
 				6C91270121C749EB00C1C543 /* CupertinoJWT.framework */,
+				47058C3E2CC7FFFB990E4117 /* Pods_CupertinoJWTExample.framework */,
+				860407B18DECEC4C00418744 /* Pods_CupertinoJWTExampleWatchOS_Extension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE4FD116C21F7DB8035D1F49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D55DC89F5EC4B481266E78B6 /* Pods-CupertinoJWTExample.debug.xcconfig */,
+				0EE1A55E71EA4435CE688308 /* Pods-CupertinoJWTExample.release.xcconfig */,
+				556806BC8297C3CF05A4FE0B /* Pods-CupertinoJWTExampleWatchOS Extension.debug.xcconfig */,
+				3777EDE6DA89394BC1DF59E9 /* Pods-CupertinoJWTExampleWatchOS Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C9126D521C745CF00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExample" */;
 			buildPhases = (
+				958A99F484DE695628E13D1E /* [CP] Check Pods Manifest.lock */,
 				6C9126BF21C745CD00C1C543 /* Sources */,
 				6C9126C021C745CD00C1C543 /* Frameworks */,
 				6C9126C121C745CD00C1C543 /* Resources */,
 				6C9126FC21C747DE00C1C543 /* Embed Watch Content */,
+				C32D24AA4FFB020A423405B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C9126F921C747DE00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExampleWatchOS Extension" */;
 			buildPhases = (
+				C34F074AD555B12FC677378C /* [CP] Check Pods Manifest.lock */,
 				6C9126E221C747DD00C1C543 /* Sources */,
 				6C9126E321C747DD00C1C543 /* Frameworks */,
 				6C9126E421C747DD00C1C543 /* Resources */,
+				70A049430F805D9635918F98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +333,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70A049430F805D9635918F98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CupertinoJWTExampleWatchOS Extension/Pods-CupertinoJWTExampleWatchOS Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CupertinoJWTExampleWatchOS Extension/Pods-CupertinoJWTExampleWatchOS Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CupertinoJWTExampleWatchOS Extension/Pods-CupertinoJWTExampleWatchOS Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		958A99F484DE695628E13D1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CupertinoJWTExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C32D24AA4FFB020A423405B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CupertinoJWTExample/Pods-CupertinoJWTExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CupertinoJWTExample/Pods-CupertinoJWTExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CupertinoJWTExample/Pods-CupertinoJWTExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34F074AD555B12FC677378C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CupertinoJWTExampleWatchOS Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C9126BF21C745CD00C1C543 /* Sources */ = {
@@ -485,6 +595,7 @@
 		};
 		6C9126D621C745CF00C1C543 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55DC89F5EC4B481266E78B6 /* Pods-CupertinoJWTExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +618,7 @@
 		};
 		6C9126D721C745CF00C1C543 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE1A55E71EA4435CE688308 /* Pods-CupertinoJWTExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +679,7 @@
 		};
 		6C9126F721C747DE00C1C543 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556806BC8297C3CF05A4FE0B /* Pods-CupertinoJWTExampleWatchOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,6 +706,7 @@
 		};
 		6C9126F821C747DE00C1C543 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3777EDE6DA89394BC1DF59E9 /* Pods-CupertinoJWTExampleWatchOS Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;

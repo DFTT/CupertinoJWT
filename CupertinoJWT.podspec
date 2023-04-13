@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "3.0"
   s.source = { :git => "https://github.com/ethanhuang13/CupertinoJWT.git", :tag => "v#{s.version}" }
   s.source_files = "Sources/*.swift"
-  s.resource = "install_common_crypto.sh"
-  s.script_phase = { :name => 'CommonCrypto', :script => 'sh ${PODS_TARGET_SRCROOT}/install_common_crypto.sh', :execution_position => :before_compile }
+#  s.resource = "install_common_crypto.sh"
+#  s.script_phase = { :name => 'CommonCrypto', :script => 'sh ${PODS_TARGET_SRCROOT}/install_common_crypto.sh', :execution_position => :before_compile }
 end

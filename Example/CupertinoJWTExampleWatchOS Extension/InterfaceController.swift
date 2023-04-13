@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+
 import CupertinoJWT
 
 class InterfaceController: WKInterfaceController {
@@ -32,18 +33,29 @@ DiHiJGIDEzi6+q3mmyhH6ZWQWFdFei2qgdyM1V6qtRPVq+yHBNSBebbR4noE/IYO
 hMdWYrKn
 -----END PRIVATE KEY-----
 """
+        
+//        
+//        let jwt = JWT(headr: JWT.Header(keyID: key.keyID), payload: JWT.Payload(teamID: key.keyUserID, issueDate: iat, expireDate: iat + 1200, bundleID: key.appBundleID))
+//        let p8 = try! String(contentsOfFile: key.keyFilePath)
+//
+//        guard let token = try? jwt.sign(with: p8) else {
+//            print("JWT 生成失败")
+//            completion(nil)
+//            return
+//        }
+//        
 
-        // Assign developer information and token expiration setting
-        let jwt = JWT(keyID: keyID, teamID: teamID, issueDate: Date(), expireDuration: 60 * 60)
-
-        do {
-            let token = try jwt.sign(with: p8)
-            // Use the token in the authorization header in your requests connecting to Apple’s API server.
-            // e.g. urlRequest.addValue(_ value: "bearer \(token)", forHTTPHeaderField field: "authorization")
-            print("Generated JWT: \(token)")
-        } catch {
-            // Handle error
-        }
+//        // Assign developer information and token expiration setting
+//        let jwt = JWT(keyID: keyID, teamID: teamID, issueDate: Date(), expireDuration: 60 * 60)
+//
+//        do {
+//            let token = try jwt.sign(with: p8)
+//            // Use the token in the authorization header in your requests connecting to Apple’s API server.
+//            // e.g. urlRequest.addValue(_ value: "bearer \(token)", forHTTPHeaderField field: "authorization")
+//            print("Generated JWT: \(token)")
+//        } catch {
+//            // Handle error
+//        }
     }
     
     override func willActivate() {

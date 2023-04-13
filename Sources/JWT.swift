@@ -9,48 +9,62 @@
 import Foundation
 
 public struct JWT: Codable {
-    private struct Header: Codable {
+    public struct Header: Codable {
         /// alg
-        let algorithm: String = "ES256"
+        public let algorithm: String = "ES256"
+        public let tokenType: String = "JWT"
 
         /// kid
-        let keyID: String
+        public let keyID: String
 
         enum CodingKeys: String, CodingKey {
             case algorithm = "alg"
+            case tokenType = "typ"
             case keyID = "kid"
+        }
+
+        public init(keyID: String) {
+            self.keyID = keyID
         }
     }
 
-    private struct Payload: Codable {
+    public struct Payload: Codable {
         /// iss
         public let teamID: String
 
-        /// iat
-        public let issueDate: Int
+        /// iat (s)
+        public let issueDate: Int = Int(Date().timeIntervalSince1970.rounded())
 
-        /// exp
+        /// exp (s)
         public let expireDate: Int
+
+        /// aud
+        public let audience: String = "appstoreconnect-v1"
+
+        /// bid
+        public let bundleID: String
 
         enum CodingKeys: String, CodingKey {
             case teamID = "iss"
             case issueDate = "iat"
             case expireDate = "exp"
+            case audience = "aud"
+            case bundleID = "bid"
+        }
+
+        public init(teamID: String, bundleID: String) {
+            self.teamID = teamID
+            self.expireDate = issueDate + 3600 // 最多60分钟
+            self.bundleID = bundleID
         }
     }
 
     private let header: Header
-
     private let payload: Payload
 
-    public init(keyID: String, teamID: String, issueDate: Date, expireDuration: TimeInterval) {
-
-        header = Header(keyID: keyID)
-
-        let iat = Int(issueDate.timeIntervalSince1970.rounded())
-        let exp = iat + Int(expireDuration)
-
-        payload = Payload(teamID: teamID, issueDate: iat, expireDate: exp)
+    public init(headr: Header, payload: Payload) {
+        self.header = headr
+        self.payload = payload
     }
 
     /// Combine header and payload as digest for signing.
